@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #F0E69E;
+   
+    
+}
+
+.texture {
+    width: 100vw;
+    height: 100vh;
+    z-index: 4;
+    position: absolute;
+    top: 0px;
+
+}
+
+/* Scale canvas with resize attribute to full size */
+canvas[resize] {
+    background-color: #ECD305;
+    width:600px;
+    height: 800px;
+}
+
+h1{
+    position: absolute;
+    z-index: 3;
+    color: white;
+    font-family: "Futura PT";
+    top: 80px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    letter-spacing: 20px;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}

@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    background-color: #E7E2DF;
+    
+}
+
+.texture {
+    width: 100vw;
+    height: 100vh;
+    z-index: 4;
+    position: absolute;
+    top: 0px;
+
+}
+
+/* Scale canvas with resize attribute to full size */
+canvas[resize] {
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    position: absolute;
+    z-index: 3;
+    color: #000;
+    font-family: "Futura PT";
+    top: 80px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 20px;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}

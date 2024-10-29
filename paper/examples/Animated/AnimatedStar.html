@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Animated Star</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="../../dist/paper-full.js"></script>
+    <script type="text/paperscript" canvas="canvas">
+        // create the circle to test this thing
+    var circle = new Path.Circle(new Point(300,300),300)
+    circle.fillColor = 'lightblue';
+
+    var svg_shapes = [circle]
+    var mouse_circle = new Path.Circle(view.center,100)
+    mouse_circle.fillColor = 'pink';
+
+
+    //track the mouse
+    function onMouseMove(event) {
+        mouse_circle.position = event.point
+
+        for (var svg_shape of svg_shapes ){
+            console.log('subtracting')
+            var originalShape = svg_shape.clone();
+            var subtract_mouse_shape = mouse_circle.subtract(originalShape)
+            subtract_mouse_shape.fillColor= "#1F2120"
+            subtract_mouse_shape.removeOnMove();
+        }
+    }
+    </script>
+</head>
+<body>
+    <canvas id="canvas" resize stats hidpi="off"></canvas>
+</body>
+</html>

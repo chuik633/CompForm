@@ -1,0 +1,37 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+
+.tp-rotv{
+  background-color: white !important;
+  border: 1px solid black!important;
+  box-shadow: none!important;
+}
+
+.tp-rotv *{
+  color: black!important;
+
+}
+
+.tp-txtv_i{
+  background-color: inherit !important;
+  border: 1px solid black !important;
+  border-radius: 5px !important;
+  /* height: 40px !important; */
+}
+
+.tp-sldv_t::before{
+  background-color: white !important;
+  border:1px solid black;
+}
+
+.tp-sldv_k::after,.tp-sldv_k::before{
+  background-color: black !important;
+  border:1px solid black;
+}

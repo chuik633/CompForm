@@ -1,0 +1,32 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family:'Courier New' ;
+}
+
+canvas {
+  display: block;
+}
+input[type="file"] {
+  display: none
+}
+
+button {
+  font-family: 'Courier New';
+  background-color:inherit;
+  border: 0px;
+  text-decoration: underline;
+  color: rgb(98, 83, 65)
+}
+button:hover{
+  
+  font-style: italic;
+  text-decoration: underline;
+  
+}
+button:active{
+  font-weight: bold;
+}
+
+
+
